@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Sigmar+One&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+}
+
+h1 {
+  font-family: "Sigmar One", cursive;
+  color: #EDFDFB;
+}
+
+.hero {
+  background: url("/images/hero.jpg") center;
+  background-size: cover;
+  height: 800px;
+}
+
+.footer__top {
+  height: 150px;
+  background-color: #FF0022;
+  color: #EDFDFB;
+}
+.footer__bottom {
+  background-color: #B9BAB8;
+  height: 250px;
+}

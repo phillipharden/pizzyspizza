@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links style sheet from downloaded Bootstrap files -->
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
+
+    <!-- Links JavaScript from downloaded Bootstrap files -->
+    <script src="bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+
+    <!-- CDN (Content Delivery Network) -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script> -->        
+
+    <!-- icons link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- My Style Sheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- My JavaScript files -->
+    <script src="js/app.js" defer></script>
+    <script src="js/controller.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/utility.js"></script>
+
+    <title>Pizzys Pizza</title>
+</head>
+
+<body>
+
+
+    <main>
+        <header>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="header__logo" src="images/Pizzys-Pizza-Logo-150px.png" alt="Pizzys Pizza logo"></a>
+
+                    <a class="nav-link" href="#">Order Online</a>
+                    <a class="nav-link" href="#about">About Us</a>
+                    <a class="nav-link" href="#location"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg></a>
+                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#">Sign In</a>
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg></a>
+                </div>
+            </nav>      
+        </header>
+
+
+        <section class="hero">
+            <h1 class="display-1">Pizzys Pizza</h1>
+            <button type="button" class="btn btn-primary btn-lg order-pickup">Pick Up</button>
+            <button type="button" class="btn btn-primary btn-lg order-pickup order-delivery">Delivery</button>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Slicing Pies Since 1999</h2>
+            <img src="#" alt="Pizzys Pizza employee making pizza">
+            <div>
+                <h3>About</h3>
+                <p>
+                    We’ve been making fresh, authentic NY style pizza for over twenty years. We grew up enjoying and
+                    perfecting pizza, and we want to share our passion with everyone we serve.
+                </p>
+                <p>
+                    Our high standards aren’t easy to keep, but they’re necessary to create the most delicious,
+                    authentic New York Style pizza, subs, and Italian dinners. And that’s what our customers deserve. So
+                    no matter who stops in for a slice, we always give them our best.
+                </p>
+            </div>
+        </section>
+
+        <section class="specials" id="specials">
+            <h2>Check Out Our Daily Specials</h2>
+            <article class="specials__list">
+
+                <h3>Weekly Lunch Specials</h3>
+                <h4>Tuesday - Friday (11:00 am - 3:00 pm)
+                </h4>
+                <p>
+                    2 slices w/ 2 toppings & drink: $7.00
+                </p>
+                <p>
+                    1 slice w/2 toppings, side Garden or Caesar salad & drink $7.00
+                </p>
+                <p>
+                    1 medium Stromboli/Calzone w/6 toppings & drink: $9.00
+                    (excluding steak and chicken)
+                </p>
+                <p>
+                    1 meatball sub w/chips & drink: $7.75
+                </p>
+                <p>
+                    6 wings w/ fries & drink: $8.75
+                </p>
+                <h3>Daily Specials</h3>
+                <p>
+                    Large Cheese Pizza with 1 topping & 10 Wings: $27.50
+                </p>
+                <p>
+                    Large Cheese Pizza with 1 topping & Large Greek salad: $23.00
+                </p>
+            </article>
+        </section>
+
+        <section class="location" id="location">
+
+            <h2>Drop In And Have A Slice</h2>
+            <div class="loaction__info">
+                <h3>Location</h3>
+                <address>
+                    4045 Five Forks Trickum Rd SW
+                    Lilburn, GA 30047
+                </address>
+                <h3>Hours</h3>
+                <p>
+                    Sunday - Thursday <br>
+                    11:00 am - 10:00 pm<br>
+                    <br>
+                    Friday - Saturday<br>
+                    11:00am - midnight
+                </p>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer__top">
+                <h5>Get Email Updates!</h5>
+                <p>
+                    Sign up for email updates to earn free pizza and get deals delivered right to your inbox.
+                </p>
+                <button  type="button" class="btn btn-outline-primary">
+                    Sign Up For Our E-Club!
+                </button>
+            </div>
+            <div class="footer__bottom">
+                <img src="images/Pizzys-Pizza-Logo-150px.png" alt="Pizzys Pizza logo" class="footer__logo">
+                <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/en/"><i class="bi bi-tiktok"></i></a>
+                <a href="https://twitter.com/PizzysPizza"><i class="bi bi-twitter"></i></a>
+                <img src="images/footer-image.png" alt="Pizzys Pizza logo">
+                <p>Pizzys Pizza &copy; Copyright 2022</p>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
