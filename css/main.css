@@ -1,20 +1,16 @@
-/* COLORS
-Red: #ff0022
-White: #edfdfb
-Off-White: #f8e9f2
-Gray: #b9bab8
-Black: #04030f
-*/
-
-/* TYPOGRAPHY------------------------------------ */
+/* COLORS */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Sigmar+One&display=swap");
 body {
   font-family: "Comfortaa", cursive;
 }
 
-h1, .h1 {
+.brand-font {
   font-family: "Sigmar One", cursive;
-  color: #EDFDFB;
+}
+
+h1,
+.h1 {
+  color: #edfdfb;
   font-size: calc(1.375rem + 8vw);
 }
 
@@ -28,44 +24,251 @@ h1, .h1 {
   color: #edfdfb !important;
 }
 
-@media (min-width: 1200px) {
-  h1, .h1 {
-    font-size: 8rem;
-  }
-}
-.pt-5 {
-  padding-top: 8rem !important;
+.btn-primary {
+  --bs-btn-color: #EDFDFB;
+  --bs-btn-bg: #982e2e;
+  --bs-btn-border-color: #982e2e;
+  --bs-btn-hover-color: #EDFDFB;
+  --bs-btn-hover-bg: #982e2e;
+  --bs-btn-hover-border-color: #EDFDFB;
+  --bs-btn-active-color: #EDFDFB;
+  --bs-btn-active-bg: #982e2e;
+  --bs-btn-active-border-color: #982e2e;
+  --bs-btn-disabled-bg: #982e2e;
+  --bs-btn-disabled-border-color: #982e2e;
 }
 
-.header {
-  padding: 0 2%;
+.btn-lg,
+.btn-group-lg > .btn {
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-padding-x: 5rem;
+  --bs-btn-font-size: 2rem;
+  --bs-btn-border-radius: 0.5rem;
 }
+
+.btn-outline-light {
+  --bs-btn-color: #EDFDFB;
+  --bs-btn-border-color: #EDFDFB;
+  --bs-btn-hover-color: #982e2e;
+  --bs-btn-hover-bg: #EDFDFB;
+  --bs-btn-hover-border-color: #f8f9fa;
+  --bs-btn-active-color: #982e2e;
+  --bs-btn-active-bg: #b9bab8;
+  --bs-btn-active-border-color: #982e2e;
+  --bs-btn-active-shadow: inset 0 3px 5px #982e2e;
+  --bs-btn-disabled-color: #EDFDFB;
+  --bs-btn-disabled-border-color: #EDFDFB;
+}
+
+.btn-light {
+  --bs-btn-color: #04030f;
+  --bs-btn-bg: #f8f9fa;
+  --bs-btn-border-color: #f8f9fa;
+  --bs-btn-hover-color: #04030f;
+  --bs-btn-hover-bg: #d3d4d5;
+  --bs-btn-hover-border-color: #c6c7c8;
+  --bs-btn-active-color: #04030f;
+  --bs-btn-active-bg: #c6c7c8;
+  --bs-btn-active-border-color: #babbbc;
+  --bs-btn-disabled-color: #04030f;
+  --bs-btn-disabled-bg: #f8f9fa;
+  --bs-btn-disabled-border-color: #f8f9fa;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #04030f;
+  --bs-btn-border-color: #982e2e;
+  --bs-btn-hover-color: #f8f9fa;
+  --bs-btn-hover-bg: #982e2e;
+  --bs-btn-hover-border-color: #04030f;
+  --bs-btn-active-color: #f8f9fa;
+  --bs-btn-active-bg: #982e2e;
+  --bs-btn-active-border-color: #04030f;
+  --bs-btn-disabled-color: #982e2e;
+  --bs-btn-disabled-border-color: #04030f;
+}
+
+/* -- NAVBAR ------------------------------ */
+li {
+  padding-left: 30px;
+}
+
+.navbar-toggler {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  /* outline: none; */
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+}
+
+/* .navbar-toggler span {
+  margin: 0;
+  padding: 0;
+} */
+.toggler-icon {
+  /* display: block; */
+  /* position: absolute; */
+  height: 3px;
+  width: 100%;
+  background: #982e2e;
+  /* border-radius: 1px; */
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+/* when the hamburger icon is clicked */
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  /* filter: alpha(opacity=0); */
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+/* Make the hamburger menu turn into an X when clicked */
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -20px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  /* filter: alpha(opacity=100); */
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 20px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+/* hamburger icon color */
+.navbar-toggler.collapsed .toggler-icon {
+  background: #04030F;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  background-repeat: no-repeat;
+}
+
+.facebook {
+  background-image: url("/icons/facebook.svg");
+}
+
+.instagram {
+  background-image: url("/icons/instagram.svg");
+}
+
+.twitter {
+  background-image: url("/icons/twitter.svg");
+}
+
+.tiktok {
+  background-image: url("/icons/tiktok.svg");
+}
+
+/* FOOTER ------------------------------ */
+.footer-pizza {
+  bottom: 10%;
+  position: relative;
+  width: 200px;
+}
+
+.footer {
+  background-color: #B9BAB8;
+}
+
+.footer__top {
+  background-color: #982e2e;
+  color: #EDFDFB;
+}
+
+.footer__logo {
+  padding-left: 2%;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+/* STYLES NOT IN BOOTSTRAP */
+.text-shadow-light {
+  text-shadow: 2px 2px 2px #f8e9f2;
+}
+
+.text-shadow-dark {
+  text-shadow: 2px 2px 2px #04030F;
+}
+
+.texting-border-yellow {
+  border: 1px solid yellow;
+}
+
+.texting-border-black {
+  border: 1px solid black;
+}
+
+.fs-7 {
+  font-size: 0.7rem !important;
+}
+
 /* HERO SECTION ------------------------------------- */
 .hero {
   background: url("/images/hero.jpg") center;
   background-size: cover;
   height: 800px;
 }
+.hero__buttons {
+  text-align: center;
+}
 
-/* ABOUT------------------------------ */
-
+/* ABOUT SECTION ---------------------------- */
 #about {
   background-color: #B9BAB8;
 }
+
 #about article {
   border: 1px solid black;
 }
+
 /* SPECIALS SECTION ------------------------- */
 #specials {
   background: url("/images/specials.jpg") center;
 }
+
 .text-bg-info {
   color: #04030f !important;
   background-color: #F8E9F2 !important;
 }
 
 /* LOCATION SECTION --------------- */
-
 #location {
   background-color: #04030F;
   color: #EDFDFB;
@@ -78,192 +281,63 @@ h1, .h1 {
 .map {
   min-height: 450px;
 }
-/* FOOTER ------------------------------ */
 
-.footer-pizza {
-  bottom:10%;
-	position: relative;
-  width: 200px;
-}
-.footer {
-  background-color: #B9BAB8;
+/* SIGN IN PAGE */
+.sign-in-page {
+  background: url("/images/sign-in-background.jpg") center;
+  background-size: cover;
 }
 
-.footer__top {
-  background-color: #FF0022;
-  color: #EDFDFB;
+.sign-in-form {
+  background-color: #f8e9f2;
 }
 
-.footer__logo {
-  padding-left: 2%;
+/* MODIFYING THE FORM */
+.form-select {
+  color: #04030f;
+  background-color: #edfdfb;
+  border: 1px solid #b9bab8;
 }
 
-
-/* .social-media {
-  width: 50vw;
-} */
-
-.copyright {
-  font-size: 0.8rem;
+.form-select:focus {
+  border-color: #982e2e;
+  -webkit-box-shadow: 0 0 0 1px #982e2e;
+          box-shadow: 0 0 0 1px #982e2e;
 }
 
-
-
-
-
-/* BUTTONS -------------------------- */
-.hero__buttons {
-  text-align: center;
+.google-btn {
+  height: 10px;
+  width: 10px;
+  background-image: url("/icons/google.svg");
+  background-repeat: no-repeat;
 }
 
-.btn-primary {
-  --bs-btn-color: #EDFDFB;
-  --bs-btn-bg: #FF0022;
-  --bs-btn-border-color: #FF0022;
-  --bs-btn-hover-color: #EDFDFB;
-  --bs-btn-hover-bg: #FF0022;
-  --bs-btn-hover-border-color: #EDFDFB;
-  --bs-btn-active-color: #EDFDFB;
-  --bs-btn-active-bg: #FF0022;
-  --bs-btn-active-border-color: #FF0022;
-  --bs-btn-disabled-bg: #FF0022;
-  --bs-btn-disabled-border-color: #FF0022;
-}
-
-.btn-lg, .btn-group-lg > .btn {
-  --bs-btn-padding-y: 1rem;
-  --bs-btn-padding-x: 5rem;
-  --bs-btn-font-size: 2rem;
-  --bs-btn-border-radius: 0.5rem;
-}
-
-.btn-outline-light {
-  --bs-btn-color: #EDFDFB;
-  --bs-btn-border-color: #EDFDFB;
-  --bs-btn-hover-color: #FF0022;
-  --bs-btn-hover-bg: #EDFDFB;
-  --bs-btn-hover-border-color: #f8f9fa;
-  --bs-btn-focus-shadow-rgb: 248, 249, 250;
-  --bs-btn-active-color: #FF0022;
-  --bs-btn-active-bg: #b9bab8;
-  --bs-btn-active-border-color: #FF0022;
-  --bs-btn-active-shadow: inset 0 3px 5px #FF0022;
-  --bs-btn-disabled-color: #EDFDFB;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #EDFDFB;
-  --bs-gradient: none;
-}
-
-/* MENU PAGE */
-
-.menu-hero {
+/* MENU PAGE *******************************************************************/
+#menuHero {
   background: url("/images/menu-hero.jpg") center;
   background-size: cover;
   height: 75vh;
 }
 
+/* (Menu Item) Card Modification */
+.card {
+  width: 300px;
+  height: 450px;
+  margin: 2px;
+  /* change this later */
+}
 
-/* SIGN IN PAGE */
+.card-text {
+  height: 125px;
+}
 
-.sign-in-page {
-  background: url("/images/sign-in-background.jpg") center;
+.checkout-page {
+  background: url("/images/checkout-hero.jpg") center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
 }
 
-/* Styles not in Bootstrap */
-
-.text-shadow-light {
-text-shadow: 2px 2px 2px #f8e9f2;
-}
-
- .text-shadow-dark {
-  text-shadow: 2px 2px 2px #04030F;
- }
-
-
-
-
-
-
-
-
-
-
-
- /* --NAVBAR------------------------------ */
-li {
-  padding-left: 30px;
-}
-
- .navbar-toggler {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  transition: .5s ease-in-out;
-}
-
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  /* outline: none; */
-  box-shadow: none;
-  border: 0;
-}
-
-/* .navbar-toggler span {
-  margin: 0;
-  padding: 0;
-} */
-
-.toggler-icon {
-  /* display: block; */
-  /* position: absolute; */
-  height: 3px;
-  width: 100%;
-  background: #FF0022;
-  /* border-radius: 1px; */
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-
-/* when the hamburger icon is clicked */
-.navbar-toggler .top-bar {
-  margin-top: 0px;
-  transform: rotate(135deg);
-}
-
-.navbar-toggler .middle-bar {
-  opacity: 0;
-  /* filter: alpha(opacity=0); */
-}
-
-.navbar-toggler .bottom-bar {
-  margin-top: 0px;
-  transform: rotate(-135deg);
-}
-
-/* Make the hamburger menu turn into an X when clicked */
-.navbar-toggler.collapsed .top-bar {
-  margin-top: -20px;
-  transform: rotate(0deg);
-}
-
-.navbar-toggler.collapsed .middle-bar {
-  opacity: 1;
-  /* filter: alpha(opacity=100); */
-}
-
-.navbar-toggler.collapsed .bottom-bar {
-  margin-top: 20px;
-  transform: rotate(0deg);
-}
-
-/* hamburger icon color */
-.navbar-toggler.collapsed .toggler-icon {
-  background: #04030F;
+.cart {
+  background-color: #f8e9f2;
 }

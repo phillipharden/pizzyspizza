@@ -36,7 +36,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 
-    <title>Pizzys Pizza | Sign In</title>
+    <title>Pizzys Pizza | Checkout</title>
 </head>
 
 <body>
@@ -76,10 +76,10 @@
                                 <a class="nav-link" href="index.html#location">Location</a>
                             </li>
                             <li class="nav-item text-end">
-                                <a class="nav-link active" aria-current="page" href="signin.html">Sign In</a>
+                                <a class="nav-link" href="signin.html">Sign In</a>
                             </li>
                             <li class="nav-item text-end">
-                                <a class="nav-link" href="checkout.html">Cart</a>
+                                <a class="nav-link active" aria-current="page" href="checkout.html">Cart</a>
                             </li>
                         </ul>
                     </div>
@@ -88,60 +88,88 @@
         </header>
         <!-- style="border: 1px solid yellow;" -->
 
-        <div class="sign-in-page">
-            <div class="d-flex flex-row-reverse">
+        <div class="checkout-page row">
 
-                <section class="sign-in-form col-12 col-md-8 col-xl-6">
-                    <div class="col-10 col-md-8 col-xxl-6 m-auto">
-                        <h2 class="display-1 brand-font my-5 text-center text-primary text-shadow-light">Sign In</h2>
-                        <p class="text-primary text-center mb-5">Jump in and get free stuff like pizzas, desserts, and
-                            drinks. Don’t miss out!</p>
-                        <p class="text-primary text-center mt-2">Sing In With</p>
+            <!-- cart content container -->
+            <div class="cart mx-auto col-12 col-md-8 col-lg-6  py-3">
+                <div class=" col-11 col-md-10 col-xxl-8 mx-auto">
 
 
-                        <span class="google-btn"></span>
 
-                        <button type="button"
-                            class="text-primary btn btn-light d-block w-100 mt-1 google-button">Google</button>
-                        <button type="button"
-                            class="text-primary btn btn-light d-block w-100 mt-3 facebook-button">Facebook</button>
-
-                        <p class="text-primary text-center mt-4">or</p>
-
-                        <input type="text" class="form-control mt-3" placeholder="First Name">
-                        <input type="text" class="form-control mt-3" placeholder="Last Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Phone Number">
-                        <input type="text" class="form-control mt-3" placeholder="Zip Code">
-                        <input type="password" class="form-control mt-3" placeholder="Password">
-                        <input type="password" class="form-control mt-3" placeholder="Confirm Password">
-
-                        <p class="text-primary mt-5">Want to recieve special offers?</p>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="formCheckChecked" checked="">
-                            <label class="form-check-label text-primary" for="formCheckChecked">Yes, send me emails to
-                                hook me up with FIRE offers and updates</label>
+                    <h2 class="brand-font display-1 text-center">Checkout</h2>
+                    <!-- classname cart-list to target to add more items -->
+                    <div class="cart-list">
+                        <!-- classname cart-item to target to add item data -->
+                        <div class="cart-item d-flex justify-content-between my-5">
+                            <p class="h5">Veggie Pizza 18" Large</p>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column">
+                                    <p class="mx-auto">$20.80</p>
+                                    <select name="quantity" class="w-25 mx-auto">
+                                        <option value disabled>Please select</option>
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <button class="btn btn-link mx-auto fs-7">Remove Item</button>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="formCheckDefault">
-                            <label class="form-check-label text-primary" for="formCheckDefault">I have read and accepted
-                                the <a href="#" class="text-primary">Terms and Conditions</a></label>
+                        <!-- classname cart-item to target to add item data -->
+                        <div class="cart-item d-flex justify-content-between my-5">
+                            <p class="h5">Meat Lovers Pizza 16" Medium</p>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column">
+                                    <p class="mx-auto">$17.55</p>
+                                    <select name="quantity" class="w-25 mx-auto">
+                                        <option value disabled>Please select</option>
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <button class="btn btn-link mx-auto fs-7">Remove Item</button>
+                                </div>
+                            </div>
                         </div>
-                        <button type="button"
-                            class="btn btn-success d-block w-100 mt-2 mb-5 facebook-button">Register</button>
 
                     </div>
-                </section>
+                    <div class="tip mx-auto mb-3 row">
+                        <div class="btn-group" role="group" aria-label="Basic outlined button group">
+                            <button type="button" class="btn btn-outline-primary">None</button>
+                            <button type="button" class="btn btn-outline-primary">10%</button>
+                            <button type="button" class="btn btn-outline-primary">15%</button>
+                            <button type="button" class="btn btn-outline-primary">20%</button>
+                            <button type="button" class="btn btn-outline-primary">Custom</button>
+                        </div>
+                    </div>
+
+                    <div class="col-10 mx-auto">
+                        <div class="d-flex justify-content-between">
+                            <p>Subtotal:</p>
+                            <p>$38.35</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p>Tax:</p>
+                            <p>$2.68</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p>Subtotal:</p>
+                            <p>$5.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between mb-5">
+                            <h3>Total:</h3>
+                            <h3>$46.03</h3>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-primary mx-auto w-75 mt-5">Go to Checkout</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
-
-
-
-
-
-
 
 
         <!-- FOOTER -->
@@ -166,23 +194,18 @@
                 </div>
             </div>
             <!-- BOTTOM SECTION -->
-            <div class="d-md-flex justify-content-between align-middle">
+            <div class="d-md-flex justify-content-between  align-middle">
                 <div class="footer__logo my-auto d-flex justify-content-center">
                     <img src="images/Pizzys-Pizza-Logo-150px.png" alt="Pizzys Pizza logo"
                         class="img-fluid w-sm-50 my-2 mx-auto">
                 </div>
-                <!-- <div class="my-auto mx-auto w-75 max-700 d-flex justify-content-around"> -->
-                <div class="row my-auto mx-auto ">
-                    <div class="test col-10 my-auto mx-auto h-75 d-flex testing-border-yellow">
-                        <a class="facebook icon" href="https://www.facebook.com/izzysnypizza/">Facebook</a>
-                        <a class="instagram icon" href="https://www.instagram.com/">Instagram</a>
-                        <a class="twitter icon" href="https://twitter.com/PizzysPizza">Twitter</a>
-                        <a class="tiktok icon" href="https://www.tiktok.com/en/">TikTok</a>
-                    </div>
-
+                <div class="my-auto mx-auto w-75 max-700 d-flex justify-content-around">
+                    <a href="https://www.facebook.com/izzysnypizza/"><i class="bi bi-facebook fs-1"></i></a>
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram fs-1"></i></a>
+                    <a href="https://www.tiktok.com/en/"><i class="bi bi-tiktok fs-1"></i></a>
+                    <a href="https://twitter.com/PizzysPizza"><i class="bi bi-twitter fs-1"></i></a>
                 </div>
-
-                <div>
+                <div class="">
                     <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza">
                 </div>
                 <!-- <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza"> -->

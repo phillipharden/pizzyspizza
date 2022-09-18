@@ -1,0 +1,18 @@
+/* MENU PAGE *******************************************************************/
+#menuHero {
+    background: url("/images/menu-hero.jpg") center;
+    background-size: cover;
+    height: 75vh;
+  }
+  
+  /* (Menu Item) Card Modification */
+  .card {
+    width: 300px;
+    height: 450px;
+    margin: 2px;
+    /* change this later */
+  }
+  
+  .card-text {
+    height: 125px;
+  }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links style sheet from downloaded Bootstrap files -->
-    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css">
 
     <!-- Links JavaScript from downloaded Bootstrap files -->
     <script src="bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
@@ -37,60 +37,56 @@
 
     <main>
 
-        <header class="header">
+        <header>
 
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
+                <div class="container-xxl">
 
-                    <a class="logo me-auto p-2" href="index.html">
+                    <a class="navbar-brand logo" href="index.html">
                         <img class="header__logo" src="images/logo1.png" alt="Pizzys Pizza logo">
                     </a>
 
                     <!-- Hamburger/Toggler -->
                     <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
-                        type="button" data-bs-toggle="collapse" data-bs-target="#navigation-bar"
-                        aria-controls="navigation-bar" aria-expanded="false" aria-label="Toggle Navigation">
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navigationBar"
+                        aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle Navigation">
                         <span class="toggler-icon top-bar rounded position-absolute"></span>
                         <span class="toggler-icon middle-bar rounded position-absolute"></span>
                         <span class="toggler-icon bottom-bar rounded position-absolute"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navigation-bar">
-                        <ul class="navbar-nav  justify-content-end w-100">
+                    <div class="collapse navbar-collapse" id="navigationBar">
+                        <ul class="navbar-nav justify-content-end w-100">
                             <li class="nav-item text-end">
                                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item text-end">
-                                <a class="nav-link" href="menu.html">Order Online</a>
+                                <a class="nav-link" href="menu.html">Menu</a>
                             </li>
                             <li class="nav-item text-end">
                                 <a class="nav-link" href="#specials">Specials</a>
                             </li>
                             <li class="nav-item text-end">
-                                <a class="nav-link" href="#about">About <i class="bi bi-info-circle"></i></a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item text-end">
-                                <a class="nav-link" href="#location">Location <i class="bi bi-geo-alt"></i></a>
+                                <a class="nav-link" href="#location">Location</a>
                             </li>
                             <li class="nav-item text-end">
-                                <a class="nav-link" href="#">Contact <i class="bi bi-envelope"></i></a>
+                                <a class="nav-link" href="signin.html">Sign In</a>
                             </li>
                             <li class="nav-item text-end">
-                                <a class="nav-link" href="signin.html">Sign In <i class="bi bi-person-circle"></i></a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="#">Cart <i class="bi bi-cart2"></i></a>
+                                <a class="nav-link" href="checkout.html">Cart</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
         </header>
         <!-- HERO SECTION -->
         <section class="hero">
 
-            <h1 class="h1 pt-5 text-center text-shadow-dark">Pizzys Pizza</h1>
+            <h1 class="brand-font pt-5 text-center text-shadow-dark">Pizzys Pizza</h1>
             <div class="hero__buttons mt-5">
                 <button type="button" id="order-pickup" class="btn btn-primary btn-lg m-2">Pick Up</button>
                 <button type="button" id="order-delivery" class="btn btn-primary btn-lg m-2">Delivery</button>
@@ -230,24 +226,26 @@
             </div>
 
             <!-- BOTTOM SECTION -->
-            <div class="d-md-flex justify-content-between  align-middle">
+            <div class="d-md-flex justify-content-between">
+
                 <div class="footer__logo my-auto d-flex justify-content-center">
                     <img src="images/Pizzys-Pizza-Logo-150px.png" alt="Pizzys Pizza logo"
                         class="img-fluid w-sm-50 my-2 mx-auto">
                 </div>
-                <div class="my-auto mx-auto w-75 d-flex justify-content-around">
-                    <a href="https://www.facebook.com/"><i class="bi bi-facebook fs-1"></i></a>
-                    <a href="https://www.instagram.com/"><i class="bi bi-instagram fs-1"></i></a>
-                    <a href="https://www.tiktok.com/en/"><i class="bi bi-tiktok fs-1"></i></a>
-                    <a href="https://twitter.com/PizzysPizza"><i class="bi bi-twitter fs-1"></i></a>
+                <div class="my-auto mx-auto w-75 max-700 d-flex justify-content-around" >
+                    <a class="facebook icon" href="https://www.facebook.com/izzysnypizza/">Facebook</a>
+                    <a class="instagram icon" href="https://www.instagram.com/">Instagram</a>
+                    <a class="twitter icon" href="https://twitter.com/PizzysPizza">Twitter</a>
+                    <a class="tiktok icon" href="https://www.tiktok.com/en/">TikTok</a>
                 </div>
                 <div class="">
                     <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza">
                 </div>
+                <!-- <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza"> -->
             </div>
 
-            <div class="copyright">
-                <p class="copyright text-center pb-2">Pizzys Pizza &copy; Copyright 2022</p>
+            <div class="copyright pt-3 pb-1">
+                <p class="copyright text-center">Pizzys Pizza &copy; Copyright 2022</p>
             </div>
         </footer>
 

@@ -1,0 +1,65 @@
+ .btn-primary {
+   --bs-btn-color: #EDFDFB;
+   --bs-btn-bg: #982e2e;
+   --bs-btn-border-color: #982e2e;
+   --bs-btn-hover-color: #EDFDFB;
+   --bs-btn-hover-bg: #982e2e;
+   --bs-btn-hover-border-color: #EDFDFB;
+   --bs-btn-active-color: #EDFDFB;
+   --bs-btn-active-bg: #982e2e;
+   --bs-btn-active-border-color: #982e2e;
+   --bs-btn-disabled-bg: #982e2e;
+   --bs-btn-disabled-border-color: #982e2e;
+ }
+
+ .btn-lg,
+ .btn-group-lg>.btn {
+   --bs-btn-padding-y: 1rem;
+   --bs-btn-padding-x: 5rem;
+   --bs-btn-font-size: 2rem;
+   --bs-btn-border-radius: 0.5rem;
+ }
+
+ .btn-outline-light {
+   --bs-btn-color: #EDFDFB;
+   --bs-btn-border-color: #EDFDFB;
+   --bs-btn-hover-color: #982e2e;
+   --bs-btn-hover-bg: #EDFDFB;
+   --bs-btn-hover-border-color: #f8f9fa;
+   --bs-btn-active-color: #982e2e;
+   --bs-btn-active-bg: #b9bab8;
+   --bs-btn-active-border-color: #982e2e;
+   --bs-btn-active-shadow: inset 0 3px 5px #982e2e;
+   --bs-btn-disabled-color: #EDFDFB;
+   --bs-btn-disabled-border-color: #EDFDFB;
+ }
+
+ //   btn-light used for the sign in with your social media (Google or Facebook)
+
+ .btn-light {
+   --bs-btn-color: #04030f;
+   --bs-btn-bg: #f8f9fa;
+   --bs-btn-border-color: #f8f9fa;
+   --bs-btn-hover-color: #04030f;
+   --bs-btn-hover-bg: #d3d4d5;
+   --bs-btn-hover-border-color: #c6c7c8;
+   --bs-btn-active-color: #04030f;
+   --bs-btn-active-bg: #c6c7c8;
+   --bs-btn-active-border-color: #babbbc;
+   --bs-btn-disabled-color: #04030f;
+   --bs-btn-disabled-bg: #f8f9fa;
+   --bs-btn-disabled-border-color: #f8f9fa;
+ }
+
+ .btn-outline-primary {
+   --bs-btn-color: #04030f;
+   --bs-btn-border-color: #982e2e;
+   --bs-btn-hover-color: #f8f9fa;
+   --bs-btn-hover-bg: #982e2e;
+   --bs-btn-hover-border-color: #04030f;
+   --bs-btn-active-color: #f8f9fa;
+   --bs-btn-active-bg: #982e2e;
+   --bs-btn-active-border-color: #04030f;
+   --bs-btn-disabled-color: #982e2e;
+   --bs-btn-disabled-border-color: #04030f;
+ }

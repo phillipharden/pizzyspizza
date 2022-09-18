@@ -1,0 +1,28 @@
+/* STYLES NOT IN BOOTSTRAP */
+
+.text-shadow-light {
+  text-shadow: 2px 2px 2px #f8e9f2;
+}
+
+.text-shadow-dark {
+  text-shadow: 2px 2px 2px #04030F;
+}
+
+.texting-border-yellow {
+  border: 1px solid yellow;
+}
+
+.texting-border-black {
+  border: 1px solid black;
+}
+
+// .test {
+//   border: 1px solid black;
+//   height: inherit;
+// }
+
+// Typography
+
+.fs-7 {
+  font-size: .7rem !important;
+}

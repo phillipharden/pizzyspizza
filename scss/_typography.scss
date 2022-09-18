@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Sigmar+One&display=swap");
+
+body {
+  font-family: "Comfortaa", cursive;
+}
+.brand-font {
+  font-family: "Sigmar One", cursive;
+}
+
+h1,
+.h1 {  
+  color: $white-color;
+  font-size: calc(1.375rem + 8vw);
+}
+
+.text-primary {
+  --bs-text-opacity: 1;
+  color: #04030f !important;
+}
+
+.text-secondary {
+  --bs-text-opacity: 1;
+  color: #edfdfb !important;
+}
