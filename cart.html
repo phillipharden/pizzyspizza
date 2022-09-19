@@ -40,52 +40,52 @@
 </head>
 
 <body>
-   
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-xxl">
-                    <!-- Navbar Brand Logo -->
-                    <a class="navbar-brand logo" href="index.html">
-                        <img class="header__logo" src="images/logo1.png" alt="Pizzys Pizza logo">
-                    </a>
-                    <!-- Hamburger/Toggler -->
-                    <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
-                        type="button" data-bs-toggle="collapse" data-bs-target="#navigationBar"
-                        aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle Navigation">
-                        <span class="toggler-icon top-bar rounded position-absolute"></span>
-                        <span class="toggler-icon middle-bar rounded position-absolute"></span>
-                        <span class="toggler-icon bottom-bar rounded position-absolute"></span>
-                    </button>
-                    <!-- Navigation Options -->
-                    <div class="collapse navbar-collapse" id="navigationBar">
-                        <ul class="navbar-nav justify-content-end w-100">
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item text-end ps-5">
-                                <a class="nav-link" href="menu.html">Menu</a>
-                            </li>
-                            <li class="nav-item text-end ps-5">
-                                <a class="nav-link" href="index.html#specials">Specials</a>
-                            </li>
-                            <li class="nav-item text-end ps-5">
-                                <a class="nav-link" href="index.html#about">About</a>
-                            </li>
-                            <li class="nav-item text-end ps-5">
-                                <a class="nav-link" href="index.html#location">Location</a>
-                            </li>
-                            <li class="nav-item text-end ps-5">
-                                <a class="nav-link" href="signin.html">Sign In</a>
-                            </li>
-                            <li class="nav-item text-end ps-5">
-                                <a class="nav-link active" aria-current="page" href="cart.html">Cart</a>
-                            </li>
-                        </ul>
-                    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-xxl">
+                <!-- Navbar Brand Logo -->
+                <a class="navbar-brand logo" href="index.html">
+                    <img class="header__logo" src="images/logo1.png" alt="Pizzys Pizza logo">
+                </a>
+                <!-- Hamburger/Toggler -->
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navigationBar"
+                    aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="toggler-icon top-bar rounded position-absolute"></span>
+                    <span class="toggler-icon middle-bar rounded position-absolute"></span>
+                    <span class="toggler-icon bottom-bar rounded position-absolute"></span>
+                </button>
+                <!-- Navigation Options -->
+                <div class="collapse navbar-collapse" id="navigationBar">
+                    <ul class="navbar-nav justify-content-end w-100">
+                        <li class="nav-item text-end">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link" href="index.html#specials">Specials</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link" href="index.html#location">Location</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link" href="signin.html">Sign In</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link active" aria-current="page" href="cart.html">Cart</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <main>
+            </div>
+        </nav>
+    </header>
+    <main>
         <div class="checkout-page row">
 
             <!-- cart content container -->
@@ -103,12 +103,7 @@
                             <div class="d-flex">
                                 <div class="d-flex flex-column">
                                     <p class="mx-auto">$20.80</p>
-                                    <select name="quantity" class="w-25 mx-auto">
-                                        <option value disabled>Please select</option>
-                                        <option value="1" selected>1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
+                                    <input type="number" value="1" min="1" name="quantity" class="w-25 mx-auto">
                                     <button class="btn btn-link mx-auto fs-7">Remove Item</button>
                                 </div>
                             </div>
@@ -119,12 +114,10 @@
                             <div class="d-flex">
                                 <div class="d-flex flex-column">
                                     <p class="mx-auto">$17.55</p>
-                                    <select name="quantity" class="w-25 mx-auto">
-                                        <option value disabled>Please select</option>
-                                        <option value="1" selected>1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
+
+                                    <input type="number" value="1" min="1" name="quantity" class="w-25 mx-auto">
+
+
                                     <button class="btn btn-link mx-auto fs-7">Remove Item</button>
                                 </div>
                             </div>
@@ -135,7 +128,7 @@
                         <div class="btn-group" role="group" aria-label="Basic outlined button group">
                             <button type="button" class="btn btn-outline-primary">None</button>
                             <button type="button" class="btn btn-outline-primary">10%</button>
-                            <button type="button" class="btn btn-outline-primary active">15%</button>
+                            <button type="button" class="btn btn-outline-primary">15%</button>
                             <button type="button" class="btn btn-outline-primary">20%</button>
                             <button type="button" class="btn btn-outline-primary">Custom</button>
                         </div>
@@ -151,7 +144,7 @@
                             <p>$2.68</p>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <p>Subtotal:</p>
+                            <p>Tip:</p>
                             <p>$5.00</p>
                         </div>
                         <div class="d-flex justify-content-between mb-5">
@@ -187,7 +180,8 @@
                         </p>
                     </div>
                     <div class="col-lg-6 btn-box">
-                        <button type="button" class="btn btn-outline-light btn-lg text-uppercase w-100 mx-lg-auto fs-5">
+                        <button type="button"
+                            class="btn btn-outline-light btn-lg text-uppercase w-100 mx-lg-auto fs-4 fs-xl-5">
                             Sign Up For Our E-Club!
                         </button>
                     </div>
@@ -222,7 +216,7 @@
             <p class="copyright text-center">Pizzys Pizza &copy; Copyright 2022</p>
         </div>
     </footer>
-    
+
 </body>
 
 </html>
