@@ -1,6 +1,6 @@
 /* HERO SECTION ------------------------------------- */
 .hero {
-    background: url("/images/hero.jpg") center;
+    background: url("../images/hero.jpg") center;
     background-size: cover;
     height: 800px;
     &__buttons {
@@ -20,7 +20,7 @@
   
   /* SPECIALS SECTION ------------------------- */
   #specials {
-    background: url("/images/specials.jpg") center;
+    background: url("../images/specials.jpg") center;
   }
   
   .text-bg-info {

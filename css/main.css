@@ -149,19 +149,19 @@ h1,
 }
 
 .facebook {
-  background-image: url("/icons/facebook.svg");
+  background-image: url("../icons/facebook.svg");
 }
 
 .instagram {
-  background-image: url("/icons/instagram.svg");
+  background-image: url("../icons/instagram.svg");
 }
 
 .twitter {
-  background-image: url("/icons/twitter.svg");
+  background-image: url("../icons/twitter.svg");
 }
 
 .tiktok {
-  background-image: url("/icons/tiktok.svg");
+  background-image: url("../icons/tiktok.svg");
 }
 
 /* FOOTER ------------------------------ */
@@ -200,7 +200,7 @@ h1,
 
 /* HERO SECTION ------------------------------------- */
 .hero {
-  background: url("/images/hero.jpg") center;
+  background: url("../images/hero.jpg") center;
   background-size: cover;
   height: 800px;
 }
@@ -219,7 +219,7 @@ h1,
 
 /* SPECIALS SECTION ------------------------- */
 #specials {
-  background: url("/images/specials.jpg") center;
+  background: url("../images/specials.jpg") center;
 }
 
 .text-bg-info {
@@ -243,7 +243,7 @@ h1,
 
 /* SIGN IN PAGE */
 .sign-in-page {
-  background: url("/images/sign-in-background.jpg") center;
+  background: url("../images/sign-in-background.jpg") center;
   background-size: cover;
 }
 
@@ -266,7 +266,7 @@ h1,
 
 /* MENU PAGE *******************************************************************/
 #menuHero {
-  background: url("/images/menu-hero.jpg") center;
+  background: url("../images/menu-hero.jpg") center;
   background-size: cover;
   height: 75vh;
 }
@@ -296,7 +296,7 @@ h1,
 }
 
 .checkout-page {
-  background: url("/images/checkout-hero.jpg") center;
+  background: url("../images/checkout-hero.jpg") center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
