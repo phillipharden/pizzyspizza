@@ -1,17 +1,19 @@
+ // Customized the colors of the primary buttons
  .btn-primary {
    --bs-btn-color: #EDFDFB;
-   --bs-btn-bg: #982e2e;
-   --bs-btn-border-color: #982e2e;
+   --bs-btn-bg: #CC0000;
+   --bs-btn-border-color: #CC0000;
    --bs-btn-hover-color: #EDFDFB;
-   --bs-btn-hover-bg: #982e2e;
+   --bs-btn-hover-bg: #CC0000;
    --bs-btn-hover-border-color: #EDFDFB;
    --bs-btn-active-color: #EDFDFB;
-   --bs-btn-active-bg: #982e2e;
-   --bs-btn-active-border-color: #982e2e;
-   --bs-btn-disabled-bg: #982e2e;
-   --bs-btn-disabled-border-color: #982e2e;
+   --bs-btn-active-bg: #CC0000;
+   --bs-btn-active-border-color: #CC0000;
+   --bs-btn-disabled-bg: #CC0000;
+   --bs-btn-disabled-border-color: #CC0000;
  }
 
+ // Customized tht size of the large buttons to make them even bigger
  .btn-lg,
  .btn-group-lg>.btn {
    --bs-btn-padding-y: 1rem;
@@ -20,46 +22,31 @@
    --bs-btn-border-radius: 0.5rem;
  }
 
+ // Customuized the color of the outline light button for the footer button
  .btn-outline-light {
    --bs-btn-color: #EDFDFB;
    --bs-btn-border-color: #EDFDFB;
-   --bs-btn-hover-color: #982e2e;
+   --bs-btn-hover-color: #CC0000;
    --bs-btn-hover-bg: #EDFDFB;
    --bs-btn-hover-border-color: #f8f9fa;
-   --bs-btn-active-color: #982e2e;
+   --bs-btn-active-color: #CC0000;
    --bs-btn-active-bg: #b9bab8;
-   --bs-btn-active-border-color: #982e2e;
-   --bs-btn-active-shadow: inset 0 3px 5px #982e2e;
+   --bs-btn-active-border-color: #CC0000;
+   --bs-btn-active-shadow: inset 0 3px 5px #CC0000;
    --bs-btn-disabled-color: #EDFDFB;
    --bs-btn-disabled-border-color: #EDFDFB;
  }
 
- //   btn-light used for the sign in with your social media (Google or Facebook)
-
- .btn-light {
-   --bs-btn-color: #04030f;
-   --bs-btn-bg: #f8f9fa;
-   --bs-btn-border-color: #f8f9fa;
-   --bs-btn-hover-color: #04030f;
-   --bs-btn-hover-bg: #d3d4d5;
-   --bs-btn-hover-border-color: #c6c7c8;
-   --bs-btn-active-color: #04030f;
-   --bs-btn-active-bg: #c6c7c8;
-   --bs-btn-active-border-color: #babbbc;
-   --bs-btn-disabled-color: #04030f;
-   --bs-btn-disabled-bg: #f8f9fa;
-   --bs-btn-disabled-border-color: #f8f9fa;
- }
-
+// Customized for the tips buttons on the cart/checkout page
  .btn-outline-primary {
    --bs-btn-color: #04030f;
-   --bs-btn-border-color: #982e2e;
+   --bs-btn-border-color: #CC0000;
    --bs-btn-hover-color: #f8f9fa;
-   --bs-btn-hover-bg: #982e2e;
+   --bs-btn-hover-bg: #CC0000;
    --bs-btn-hover-border-color: #04030f;
    --bs-btn-active-color: #f8f9fa;
-   --bs-btn-active-bg: #982e2e;
+   --bs-btn-active-bg: #CC0000;
    --bs-btn-active-border-color: #04030f;
-   --bs-btn-disabled-color: #982e2e;
+   --bs-btn-disabled-color: #CC0000;
    --bs-btn-disabled-border-color: #04030f;
  }

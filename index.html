@@ -34,65 +34,71 @@
 </head>
 
 <body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-xxl">
+
+                <a class="navbar-brand logo" href="index.html">
+                    <img class="header__logo" src="images/logo1.png" alt="Pizzys Pizza logo">
+                </a>
+
+                <!-- Hamburger/Toggler -->
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navigationBar"
+                    aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="toggler-icon top-bar rounded position-absolute"></span>
+                    <span class="toggler-icon middle-bar rounded position-absolute"></span>
+                    <span class="toggler-icon bottom-bar rounded position-absolute"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navigationBar">
+                    <ul class="navbar-nav justify-content-end w-100">
+                        <li class="nav-item text-end">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link" href="#specials">Specials</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link" href="#location">Location</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link" href="signin.html">Sign In</a>
+                        </li>
+                        <li class="nav-item text-end ps-5">
+                            <a class="nav-link" href="cart.html">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <main>
 
-        <header>
 
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-xxl">
 
-                    <a class="navbar-brand logo" href="index.html">
-                        <img class="header__logo" src="images/logo1.png" alt="Pizzys Pizza logo">
-                    </a>
-
-                    <!-- Hamburger/Toggler -->
-                    <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
-                        type="button" data-bs-toggle="collapse" data-bs-target="#navigationBar"
-                        aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle Navigation">
-                        <span class="toggler-icon top-bar rounded position-absolute"></span>
-                        <span class="toggler-icon middle-bar rounded position-absolute"></span>
-                        <span class="toggler-icon bottom-bar rounded position-absolute"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navigationBar">
-                        <ul class="navbar-nav justify-content-end w-100">
-                            <li class="nav-item text-end">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="menu.html">Menu</a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="#specials">Specials</a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="#location">Location</a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="signin.html">Sign In</a>
-                            </li>
-                            <li class="nav-item text-end">
-                                <a class="nav-link" href="checkout.html">Cart</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
         <!-- HERO SECTION -->
-        <section class="hero">
-
-            <h1 class="brand-font pt-5 text-center text-shadow-dark">Pizzys Pizza</h1>
-            <div class="hero__buttons mt-5">
-                <button type="button" id="order-pickup" class="btn btn-primary btn-lg m-2">Pick Up</button>
-                <button type="button" id="order-delivery" class="btn btn-primary btn-lg m-2">Delivery</button>
+        <section class="hero d-flex">
+            <div class="m-auto h-75">
+                <h1 class="brand-font pt-5 text-center text-shadow-dark">Pizzys Pizza</h1>
+                <div class="hero__buttons mt-5">
+                    <button type="button" id="order-pickup" class="btn btn-primary btn-lg m-2">Pick Up</button>
+                    <button type="button" id="order-delivery" class="btn btn-primary btn-lg m-2">Delivery</button>
+                </div>
             </div>
 
+            
+
         </section>
+
         <!-- ABOUT SECTION -->
         <section id="about" class="p-4">
 
@@ -200,60 +206,60 @@
                 </div>
             </div>
         </section>
+        
+    </main>
 
-        <!-- FOOTER -->
-        <footer class="footer">
+    <!-- FOOTER -->
+    <footer class="footer">
 
-            <!-- TOP SECTION -->
-            <div class="footer__top py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h5 class="text-uppercase h2">Get Email Updates!</h5>
-                            <p class="fs-5">
-                                Sign up for email updates to earn free pizza and get deals delivered right to your
-                                inbox.
-                            </p>
-                        </div>
-                        <div class="col-lg-6 btn-box">
-                            <button type="button" class="btn btn-outline-light btn-lg text-uppercase w-100 h-100 fs-5">
-                                Sign Up For Our E-Club!
-                            </button>
-                        </div>
+        <!-- TOP SECTION -->
+        <div class="footer__top py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5 class="text-uppercase h2">Get Email Updates!</h5>
+                        <p class="fs-5">
+                            Sign up for email updates to earn free pizza and get deals delivered right to your
+                            inbox.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 btn-box">
+                        <button type="button" class="btn btn-outline-light btn-lg text-uppercase w-100 h-100 fs-5">
+                            Sign Up For Our E-Club!
+                        </button>
                     </div>
                 </div>
-
             </div>
 
-            <!-- BOTTOM SECTION -->
-            <div class="d-md-flex justify-content-between">
+        </div>
 
-                <div class="footer__logo my-auto d-flex justify-content-center">
-                    <img src="images/Pizzys-Pizza-Logo-150px.png" alt="Pizzys Pizza logo"
-                        class="img-fluid w-sm-50 my-2 mx-auto">
-                </div>
-                <div class="my-auto mx-auto w-75 max-700 d-flex justify-content-around" >
+        <!-- BOTTOM SECTION -->
+        <div class="d-md-flex justify-content-between">
+
+            <div class="footer__logo my-auto d-flex justify-content-center">
+                <a href="https://www.izzysnypizza.com/"><img src="images/Pizzys-Pizza-Logo-150px.png"
+                        alt="Pizzys Pizza logo" class="img-fluid w-sm-50 my-2 mx-auto"></a>
+
+            </div>
+            <div class="row my-auto mx-auto w-75">
+                <div class="d-flex col-md-10 col-xl-6 mx-auto justify-content-around">
                     <a class="facebook icon" href="https://www.facebook.com/izzysnypizza/">Facebook</a>
                     <a class="instagram icon" href="https://www.instagram.com/">Instagram</a>
                     <a class="twitter icon" href="https://twitter.com/PizzysPizza">Twitter</a>
                     <a class="tiktok icon" href="https://www.tiktok.com/en/">TikTok</a>
                 </div>
-                <div class="">
-                    <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza">
-                </div>
-                <!-- <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza"> -->
             </div>
-
-            <div class="copyright pt-3 pb-1">
-                <p class="copyright text-center">Pizzys Pizza &copy; Copyright 2022</p>
+            <div class="">
+                <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza">
             </div>
-        </footer>
+            <!-- <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza"> -->
+        </div>
 
-    </main>
-    <!-- JavaScript Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script> -->
+        <div class="copyright pt-3 pb-1">
+            <p class="copyright text-center">Pizzys Pizza &copy; Copyright 2022</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

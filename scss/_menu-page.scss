@@ -1,18 +1,31 @@
 /* MENU PAGE *******************************************************************/
 #menuHero {
-    background: url("/images/menu-hero.jpg") center;
-    background-size: cover;
-    height: 75vh;
-  }
-  
-  /* (Menu Item) Card Modification */
-  .card {
-    width: 300px;
-    height: 450px;
-    margin: 2px;
-    /* change this later */
-  }
-  
-  .card-text {
-    height: 125px;
-  }
+  background: url("/images/menu-hero.jpg") center;
+  background-size: cover;
+  height: 75vh;
+}
+
+/* (Menu Item) Card Modification */
+.card {
+  width: 300px;
+  height: 450px;
+  box-shadow: 2px 2px 7px #b9bab8;
+  background-color: #f8e9f2; 
+}
+
+.card-text {
+  height: 125px;
+}
+
+// Scroller for the menu items
+.scroller {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+// Created for the card footers of the menu items
+.h-80 {
+  height: 80px;
+}
