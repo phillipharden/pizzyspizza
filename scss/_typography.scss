@@ -11,42 +11,95 @@ html {
 body {
   font-family: "Comfortaa", cursive;
 }
+
 .brand-font {
   font-family: "Sigmar One", cursive;
 }
 
-h1 {  
+h1 {
   color: $white-color;
   font-size: 20vmin;
 }
 
-h2  {  
-  font-size: 7vmin;
+h2 {
+  font-size: 7vw;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 3.4rem;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 3.8rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 4.2rem;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 4.6rem;
+  }
 }
 
 h3 {
-  font-size: 5.6vmin;
+  font-size: 5.6vw;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 3.2rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 3.4rem;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 3.6rem;
+  }
 }
 
-h4 {
-  font-size: 5.4vmin;
-}
-
-h5 {
-  font-size: 5.2vmin;
-}
-
-p {
-  font-size: 5vmin;
+h4, h5 {
+  font-size: 5.4vw;
+  font-weight: 700;
   @media (min-width: 768px) {
     font-size: 1.8rem;
   }
+
   // @media (min-width: 992px) {
   //   font-size: 1.8rem;
   // }
   @media (min-width: 1200px) {
     font-size: 2.2rem;
   }
+
+  @media (min-width: 1400px) {
+    font-size: 2.6rem;
+  }
+}
+
+
+
+p,
+address,
+li {
+  font-size: 5vmin;
+
+  @media (min-width: 768px) {
+    font-size: 1.8rem;
+  }
+
+  // @media (min-width: 992px) {
+  //   font-size: 1.8rem;
+  // }
+  @media (min-width: 1200px) {
+    font-size: 2.2rem;
+  }
+
   @media (min-width: 1400px) {
     font-size: 2.6rem;
   }
@@ -62,3 +115,13 @@ p {
   --bs-text-opacity: 1;
   color: #edfdfb !important;
 }
+
+.specials-header {
+  color: $black-color;
+  @media (min-width: 768px) {
+    color: $white-color;
+  }
+}
+
+
+
