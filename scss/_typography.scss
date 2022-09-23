@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Sigmar+One&display=swap");
 
+// html {
+//   font-size: 62.5%;
+// }
+
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+}
+
 body {
   font-family: "Comfortaa", cursive;
 }
@@ -7,11 +15,39 @@ body {
   font-family: "Sigmar One", cursive;
 }
 
-h1,
-.h1 {  
+// h1,
+// .h1 {  
+//   color: $white-color;
+//   font-size: calc(1.375rem + 8vw);
+// }
+
+h1 {  
   color: $white-color;
-  font-size: calc(1.375rem + 8vw);
+  font-size: 20vmin;
 }
+
+h2  {  
+  font-size: 7vmin;
+}
+
+h3 {
+  font-size: 5.6vmin;
+}
+
+h4 {
+  font-size: 5.4vmin;
+}
+
+h5 {
+  font-size: 5.2vmin;
+}
+
+p {
+  font-size: 5vmin;
+}
+
+
+
 
 .text-primary {
   --bs-text-opacity: 1;

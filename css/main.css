@@ -1,5 +1,9 @@
 /* COLORS */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Sigmar+One&display=swap");
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+}
+
 body {
   font-family: "Comfortaa", cursive;
 }
@@ -8,10 +12,29 @@ body {
   font-family: "Sigmar One", cursive;
 }
 
-h1,
-.h1 {
+h1 {
   color: #edfdfb;
-  font-size: calc(1.375rem + 8vw);
+  font-size: 20vmin;
+}
+
+h2 {
+  font-size: 7vmin;
+}
+
+h3 {
+  font-size: 5.6vmin;
+}
+
+h4 {
+  font-size: 5.4vmin;
+}
+
+h5 {
+  font-size: 5.2vmin;
+}
+
+p {
+  font-size: 5vmin;
 }
 
 .text-primary {
@@ -42,7 +65,7 @@ h1,
 .btn-group-lg > .btn {
   --bs-btn-padding-y: 1rem;
   --bs-btn-padding-x: 5rem;
-  --bs-btn-font-size: 2rem;
+  --bs-btn-font-size: calc(100% + 1vw + 1vh);
   --bs-btn-border-radius: 0.5rem;
 }
 
@@ -142,8 +165,8 @@ h1,
 }
 
 .icon {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   font-size: 0;
   background-repeat: no-repeat;
 }
@@ -196,6 +219,14 @@ h1,
 
 .text-shadow-light {
   text-shadow: 2px 2px 2px #f8e9f2;
+}
+
+.test {
+  outline: 5px solid yellow;
+}
+
+.test1 {
+  outline: 5px solid red;
 }
 
 /* HERO SECTION ------------------------------------- */
@@ -300,4 +331,8 @@ h1,
 
 .cart {
   background-color: #f8e9f2;
+}
+
+.container-sm {
+  --bs-gutter-x: 0rem;
 }

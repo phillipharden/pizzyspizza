@@ -9,3 +9,8 @@
 @import "sign-in-page.scss";
 @import "menu-page.scss";
 @import "checkout-page.scss";
+
+
+.container-sm {
+  --bs-gutter-x: 0rem;
+}

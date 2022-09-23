@@ -18,7 +18,7 @@
  .btn-group-lg>.btn {
    --bs-btn-padding-y: 1rem;
    --bs-btn-padding-x: 5rem;
-   --bs-btn-font-size: 2rem;
+   --bs-btn-font-size: calc(100% + 1vw + 1vh);
    --bs-btn-border-radius: 0.5rem;
  }
 
