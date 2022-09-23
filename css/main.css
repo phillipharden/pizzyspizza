@@ -1,5 +1,9 @@
 /* COLORS */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Sigmar+One&display=swap");
+html {
+  font-size: 62.5%;
+}
+
 .text-responsive {
   font-size: calc(100% + 1vw + 1vh);
 }
@@ -35,6 +39,21 @@ h5 {
 
 p {
   font-size: 5vmin;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  p {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1400px) {
+  p {
+    font-size: 2.6rem;
+  }
 }
 
 .text-primary {
