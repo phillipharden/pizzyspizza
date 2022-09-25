@@ -82,16 +82,19 @@
     <main>
 
         <!-- HERO SECTION -->
-        <section id="menuHero" class="d-flex">           
-                <div class="m-auto">
-                    <h1 class="brand-font text-center text-shadow-dark">Menu</h1>
-                </div>   
+        <section id="menuHero" class="d-flex">
+            <div class="m-auto">
+                <h1 class="brand-font text-center text-shadow-dark">Menu</h1>
+            </div>
         </section>
 
+       
+
         <section class="container py-5">
+            
 
             <!-- APPETIZERS MENU -->
-            <div class="appetizers-menu">
+            <div id="appetizers-menu">
                 <div>
                     <h2 class="display-1 text-center text-uppercase brand-font py-5">Appetizers</h2>
                 </div>
@@ -248,7 +251,7 @@
             </div>
 
             <!-- SALADS MENU -->
-            <div class="appetizers-menu">
+            <div id="salads-menu">
                 <div>
                     <h2 class="display-1 text-center text-uppercase brand-font py-5">Salads</h2>
                 </div>
@@ -264,7 +267,7 @@
                             <!-- Customized Card Footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class=" mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">Side $3.99</option>
                                         <option value="2">Large $6.99</option>
@@ -287,7 +290,7 @@
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">Side $3.94</option>
                                         <option value="2">Large $6.50</option>
@@ -311,7 +314,7 @@
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">Side $4.35</option>
                                         <option value="2">Large $7.50</option>
@@ -334,7 +337,7 @@
                                 Parmigiano Cheese</p>
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">Side $4.35</option>
                                         <option value="2">Large $7.50</option>
@@ -410,7 +413,7 @@
             </div>
 
             <!-- PIZZA MENU -->
-            <div class="pizza-menu">
+            <div id="pizza-menu">
                 <div>
                     <h2 class="display-1 text-center text-uppercase brand-font py-5">Pizza</h2>
                 </div>
@@ -433,7 +436,7 @@
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">18" Large $15.99</option>
                                         <option value="2">16" Medium $14.99</option>
@@ -449,32 +452,6 @@
                         </div>
                     </div>
 
-                    <!-- Buffalo Chicken Pizza -->
-                    <div class="card m-1">
-                        <img src="./menu-item-images/pizza/buffalo-chicken-pizza.jpg" class="card-img-top"
-                            alt="Image of a Buffalo Chicken">
-                        <div class="card-body">
-                            <h5 class="card-title">Buffalo Chicken Pizza</h5>
-                            <p class="card-text overflow-auto">Buffalo chicken, fresh mozzarella, basil, and fresh
-                                tomatoes.
-                            </p>
-                            <!-- customized card footer -->
-                            <div class="d-flex justify-content-end flex-column h-80">
-                                <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
-                                        <option selected="">Select Size</option>
-                                        <option value="1">18" Large $21.99</option>
-                                        <option value="2">16" Medium $18.69</option>
-                                        <option value="3">12" Small $13.99</option>
-                                        <option value="4">10" Personal $10.99</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <a href="checkout.html" class="btn btn-primary">Add To Order</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- BBQ Chicken Pizza -->
                     <div class="card m-1">
@@ -484,16 +461,23 @@
                             <h5 class="card-title">BBQ Chickene Pizza</h5>
                             <p class="card-text overflow-auto">BBQ chicken, fresh mozzarella, basil, and fresh tomatoes.
                             </p>
-                            <select class="form-select form-select-sm" aria-label="Pizza size select">
-                                <option selected="">Select Size</option>
-                                <option value="1">18" Large $21.99</option>
-                                <option value="2">16" Medium $18.69</option>
-                                <option value="3">12" Small $13.99</option>
-                                <option value="4">10" Personal $10.99</option>
-                            </select>
-                            <a href="checkout.html" class="btn btn-primary mt-1">Add To Order</a>
+                         <!-- customized card footer -->
+                         <div class="d-flex justify-content-end flex-column h-80">
+                            <div class="mb-auto">
+                                <select class="form-select form-select-lg" aria-label="Pizza size select">
+                                    <option selected="">Select Size</option>
+                                    <option value="1">18" Large $22.99</option>
+                                    <option value="2">16" Medium $20.99</option>
+                                    <option value="3">12" Small $16.99</option>
+                                    <option value="4">10" Personal $10.99</option>
+                                </select>
+                            </div>
+                            <div>
+                                <a href="checkout.html" class="btn btn-primary">Add To Order</a>
+                            </div>
                         </div>
                     </div>
+                </div>
 
                     <!-- NY Meat Lover Pizza -->
                     <div class="card m-1">
@@ -507,7 +491,7 @@
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">18" Large $22.99</option>
                                         <option value="2">16" Medium $20.99</option>
@@ -533,7 +517,7 @@
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">18" Large $20.99</option>
                                         <option value="2">16" Medium $17.99</option>
@@ -559,12 +543,40 @@
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">18" Large $20.80</option>
                                         <option value="2">16" Medium $17.55</option>
                                         <option value="3">12" Small $14.05</option>
                                         <option value="4">10" Personal $10.35</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <a href="checkout.html" class="btn btn-primary">Add To Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Buffalo Chicken Pizza -->
+                    <div class="card m-1">
+                        <img src="./menu-item-images/pizza/buffalo-chicken-pizza.jpg" class="card-img-top"
+                            alt="Image of a Buffalo Chicken">
+                        <div class="card-body">
+                            <h5 class="card-title">Buffalo Chicken Pizza</h5>
+                            <p class="card-text overflow-auto">Buffalo chicken, fresh mozzarella, basil, and fresh
+                                tomatoes.
+                            </p>
+                            <!-- customized card footer -->
+                            <div class="d-flex justify-content-end flex-column h-80">
+                                <div class="mb-auto">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
+                                        <option selected="">Select Size</option>
+                                        <option value="1">18" Large $21.99</option>
+                                        <option value="2">16" Medium $18.69</option>
+                                        <option value="3">12" Small $13.99</option>
+                                        <option value="4">10" Personal $10.99</option>
                                     </select>
                                 </div>
                                 <div>
@@ -586,7 +598,7 @@
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">18" Large $20.80</option>
                                         <option value="2">16" Medium $17.55</option>
@@ -613,7 +625,7 @@
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">18" Large $20.80</option>
                                         <option value="2">16" Medium $17.55</option>
@@ -635,11 +647,11 @@
             </div>
 
             <!-- ITALIAN FOODS MENU -->
-            <div class="italian-menu">
+            <div id="italian-menu">
                 <div>
                     <h2 class="display-1 text-center text-uppercase brand-font py-5">Italian</h2>
                 </div>
-                <div class="scroller box-shadow-gray my-5">
+                <div class="scroller box-shadow-gray my-5 menu-list">
 
                     <!-- Stromboli -->
                     <div class="card m-1">
@@ -653,7 +665,7 @@
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">Medium $9.99</option>
                                         <option value="2">Large $15.99</option>
@@ -668,7 +680,8 @@
 
                     <!-- Calzones -->
                     <div class="card m-1">
-                        <img src="./menu-item-images/italian/calzone.jpg" class="card-img-top" alt="Image of a Calzones">
+                        <img src="./menu-item-images/italian/calzone.jpg" class="card-img-top"
+                            alt="Image of a Calzones">
                         <div class="card-body">
                             <h5 class="card-title">Calzones</h5>
                             <p class="card-text overflow-auto">All Calzones come with Mozzarella Cheese and Ricotta
@@ -677,7 +690,7 @@
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
                                 <div class="mb-auto">
-                                    <select class="form-select form-select-sm" aria-label="Pizza size select">
+                                    <select class="form-select form-select-lg" aria-label="Pizza size select">
                                         <option selected="">Select Size</option>
                                         <option value="1">Medium $9.99</option>
                                         <option value="2">Large $15.99</option>
@@ -743,8 +756,8 @@
                             </p>
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
-                                <div class="">
-                                    <select class="form-select form-select-sm mt-4" aria-label="Select protein">
+                                <div class="mb-auto">
+                                    <select class="form-select form-select-lg" aria-label="Select protein">
                                         <option selected="">Select Protein</option>
                                         <option value="1">Chicken $13.99</option>
                                         <option value="2">Shrimp $15.99</option>
@@ -842,7 +855,7 @@
             </div>
 
             <!-- DESSERTS MENU -->
-            <div class="dessert-menu">
+            <div id="desserts-menu">
                 <div>
                     <h2 class="display-1 text-center text-uppercase brand-font py-5">Desserts</h2>
                 </div>
@@ -854,7 +867,8 @@
                             alt="Image of Chocolate Mousse Cake">
                         <div class="card-body">
                             <h5 class="card-title">Chocolate Mousse Cake</h5>
-                            <p class="card-text overflow-auto">Yummu yum dessert
+                            <p class="card-text overflow-auto">
+                                Silky Chocolate Cheesecake Topped with a Layer of Belgian Chocolate Mousse
                             </p>
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
@@ -874,7 +888,8 @@
                             alt="Image of Cheese Cake">
                         <div class="card-body">
                             <h5 class="card-title">Cheese Cake</h5>
-                            <p class="card-text overflow-auto">Yummu yum dessert
+                            <p class="card-text overflow-auto">
+                                Creamy Cheesecake with a graham cracker crust and sour cream topping
                             </p>
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
@@ -893,7 +908,8 @@
                         <img src="./menu-item-images/desserts/flan.jpg" class="card-img-top" alt="Image of Flan">
                         <div class="card-body">
                             <h5 class="card-title">Flan</h5>
-                            <p class="card-text overflow-auto">Yummu yum dessert
+                            <p class="card-text overflow-auto">
+                                Creamy custard dessert topped with carame
                             </p>
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
@@ -912,7 +928,8 @@
                         <img src="./menu-item-images/desserts/canolis.jpg" class="card-img-top" alt="Image of Canolis">
                         <div class="card-body">
                             <h5 class="card-title">Canolis</h5>
-                            <p class="card-text overflow-auto">Yummu yum dessert
+                            <p class="card-text overflow-auto">
+                                A crisp pastry shell filled with sweetened imported cheese topped with chocolate chips
                             </p>
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
@@ -931,7 +948,8 @@
                         <img src="./menu-item-images/desserts/zeppola.jpg" class="card-img-top" alt="Image of Zeppole">
                         <div class="card-body">
                             <h5 class="card-title">Zeppole</h5>
-                            <p class="card-text overflow-auto">Yummu yum dessert
+                            <p class="card-text overflow-auto">
+                                Fried dough filled with ricotta, topped with powdered sugar, custard, and a cherry
                             </p>
                             <!-- customized card footer -->
                             <div class="d-flex justify-content-end flex-column h-80">
@@ -950,56 +968,57 @@
 
     </main>
 
-<!-- FOOTER -->
-<footer class="footer">
+    <!-- FOOTER -->
+    <footer class="footer">
 
-    <!-- TOP SECTION -->
-    <div class="footer__top py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h5 class="text-uppercase h2">Get Email Updates!</h5>
-                    <p class="fs-5">
-                        Sign up for email updates to earn free pizza and get deals delivered right to your
-                        inbox.
-                    </p>
-                </div>
-                <div class="col-lg-6 btn-box">
-                    <button type="button" class="btn btn-outline-light btn-lg text-uppercase w-100 mx-lg-auto fs-4 fs-xl-5">
-                        Sign Up For Our E-Club!
-                    </button>
+        <!-- TOP SECTION -->
+        <div class="footer__top py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5 class="text-uppercase h2">Get Email Updates!</h5>
+                        <p class="fs-5">
+                            Sign up for email updates to earn free pizza and get deals delivered right to your
+                            inbox.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 btn-box">
+                        <button type="button"
+                            class="btn btn-outline-light btn-lg text-uppercase w-100 mx-lg-auto fs-4 fs-xl-5">
+                            Sign Up For Our E-Club!
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-
-    </div>
-
-    <!-- BOTTOM SECTION -->
-    <div class="d-md-flex justify-content-between pt-5 pt-lg-0">
-
-        <div class="footer__logo my-auto d-flex justify-content-center">
-            <a href="https://www.izzysnypizza.com/"><img src="images/Pizzys-Pizza-Logo-150px.png"
-                    alt="Pizzys Pizza logo" class="img-fluid w-sm-50 my-2 mx-auto mb-5 mb-lg-0"></a>
 
         </div>
-        <div class="row my-auto mb-lg-5 mx-auto w-75">
-            <div class="d-flex col-md-10 col-xl-6 mx-auto justify-content-around">
-                <a class="facebook icon" href="https://www.facebook.com/izzysnypizza/">Facebook</a>
-                <a class="instagram icon" href="https://www.instagram.com/">Instagram</a>
-                <a class="twitter icon" href="https://twitter.com/PizzysPizza">Twitter</a>
-                <a class="tiktok icon" href="https://www.tiktok.com/en/">TikTok</a>
+
+        <!-- BOTTOM SECTION -->
+        <div class="d-md-flex justify-content-between pt-5 pt-lg-0">
+
+            <div class="footer__logo my-auto d-flex justify-content-center">
+                <a href="https://www.izzysnypizza.com/"><img src="images/Pizzys-Pizza-Logo-150px.png"
+                        alt="Pizzys Pizza logo" class="img-fluid w-sm-50 my-2 mx-auto mb-5 mb-lg-0"></a>
+
             </div>
+            <div class="row my-auto mb-lg-5 mx-auto w-75">
+                <div class="d-flex col-md-10 col-xl-6 mx-auto justify-content-around">
+                    <a class="facebook icon" href="https://www.facebook.com/izzysnypizza/">Facebook</a>
+                    <a class="instagram icon" href="https://www.instagram.com/">Instagram</a>
+                    <a class="twitter icon" href="https://twitter.com/PizzysPizza">Twitter</a>
+                    <a class="tiktok icon" href="https://www.tiktok.com/en/">TikTok</a>
+                </div>
+            </div>
+            <div class="">
+                <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza">
+            </div>
+            <!-- <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza"> -->
         </div>
-        <div class="">
-            <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza">
-        </div>
-        <!-- <img class="footer-pizza d-none d-lg-block" src="images/footer-pizza.png" alt="Image of a Pizza"> -->
-    </div>
 
-    <div class="copyright pt-3 pb-1">
-        <p class="copyright text-center">Pizzys Pizza &copy; Copyright 2022</p>
-    </div>
-</footer>
+        <div class="copyright pt-3 pb-1">
+            <p class="copyright text-center">Pizzys Pizza &copy; Copyright 2022</p>
+        </div>
+    </footer>
 
 </body>
 

@@ -5,17 +5,43 @@
   height: 75vh;
 }
 
+.menu-list {
+  height: 475px;
+}
+
 /* (Menu Item) Card Modification */
 .card {
   width: 300px;
   height: 450px;
   box-shadow: 2px 2px 7px #b9bab8;
-  background-color: #f8e9f2; 
+  background-color: #f8e9f2;
+}
+
+.card-title {
+  height: 32px;
+  // Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+  white-space: nowrap;
+  // Content is clipped if necessary to fit the padding box. No scrollbars are provided, and no support for allowing the user to scroll (such as by dragging or using a scroll wheel) is allowed. The content can be scrolled programmatically (for example, by setting the value of a property such as scrollLeft or the scrollTo() method), so the element is still a scroll container.
+  overflow: hidden;
+  // This keyword value will display an ellipsis ('…', U+2026 HORIZONTAL ELLIPSIS) to represent clipped text. The ellipsis is displayed inside the content area, decreasing the amount of text displayed. If there is not enough space to display the ellipsis, it is clipped.
+  text-overflow: ellipsis;
 }
 
 .card-text {
   height: 125px;
+  font-size: 1.4rem;
+  @media (min-width: 768px) {
+    font-size: 1.6rem;
+  }
+  @media (min-width: 992px) {
+    font-size: 1.8rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 2rem;
+  }
 }
+
+
 
 // Scroller for the menu items
 .scroller {
