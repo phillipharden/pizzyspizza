@@ -31,7 +31,7 @@ Open `index.html` in your browser to view the site
 
 ## 🌍 Live Demo
 
-(Add your live link here if deployed)
+[Click here to view the site](https://phillipharden.github.io/pizzyspizza/)
 
 ## 🙌 Credits
 
